@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="Login" named="True">
+    <property name="height">600</property>
+    <property name="width">800</property>
+    <child>
+      <object class="tk.Frame" id="Login_Frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">600</property>
+        <property name="width">800</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">600</property>
+          <property name="width">800</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="header" named="True">
+            <property name="background">#1a73e8</property>
+            <property name="font">{Arial} 14 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">HOUSEHOLD MANAGMENT SYSTEM</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="width">800</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label2">
+            <property name="background">#ffffff</property>
+            <property name="font">{Georgia} 16 {}</property>
+            <property name="text" translatable="yes">User Name</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">350</property>
+              <property name="y">150</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="user" named="True">
+            <property name="font">{Cambria} 12 {bold}</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">200</property>
+              <property name="x">550</property>
+              <property name="y">150</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label3">
+            <property name="background">#ffffff</property>
+            <property name="font">{Georgia} 16 {}</property>
+            <property name="text" translatable="yes">Password</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">350</property>
+              <property name="y">220</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="password" named="True">
+            <property name="font">{Cambria} 12 {bold}</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">200</property>
+              <property name="x">550</property>
+              <property name="y">220</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label4">
+            <property name="background">#ffffff</property>
+            <property name="font">{Georgia} 16 {}</property>
+            <property name="image">login.png</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">40</property>
+              <property name="y">120</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="login" named="True">
+            <property name="background">#1a73e8</property>
+            <property name="disabledforeground">#ffffff</property>
+            <property name="font">{Cambria} 14 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Login</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">120</property>
+              <property name="x">500</property>
+              <property name="y">300</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

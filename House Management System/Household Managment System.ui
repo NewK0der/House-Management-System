@@ -1,0 +1,579 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="main" named="True">
+    <property name="background">#ffffff</property>
+    <property name="height">600</property>
+    <property name="width">800</property>
+    <child>
+      <object class="tk.Label" id="header" named="True">
+        <property name="background">#1a73e8</property>
+        <property name="font">{Arial} 14 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="justify">right</property>
+        <property name="text" translatable="yes">HOUSEHOLD MANAGMENT SYSTEM</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">50</property>
+          <property name="width">800</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="sep" named="True">
+        <property name="orient">vertical</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">550</property>
+          <property name="width">2</property>
+          <property name="x">199</property>
+          <property name="y">50</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="REGISTER" named="True">
+        <property name="background">#1a73e8</property>
+        <property name="disabledforeground">#ffffff</property>
+        <property name="font">{Cambria} 14 {}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="text" translatable="yes">REGISTER</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">30</property>
+          <property name="width">120</property>
+          <property name="x">40</property>
+          <property name="y">70</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="add" named="True">
+        <property name="background">#1a73e8</property>
+        <property name="disabledforeground">#ffffff</property>
+        <property name="font">{Cambria} 14 {}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="text" translatable="yes">ADD ITEM</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">30</property>
+          <property name="width">120</property>
+          <property name="x">40</property>
+          <property name="y">130</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="Register_Frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">550</property>
+          <property name="width">600</property>
+          <property name="x">200</property>
+          <property name="y">50</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="label4" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 14 {bold underline}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">REGISTER ITEM</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="width">200</property>
+              <property name="x">200</property>
+              <property name="y">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label5" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="text" translatable="yes">Category :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="relheight">0.0</property>
+              <property name="relwidth">0.0</property>
+              <property name="relx">0.0</property>
+              <property name="rely">0.0</property>
+              <property name="width">130</property>
+              <property name="x">10</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label6" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="text" translatable="yes">Id:</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="relheight">0.0</property>
+              <property name="relwidth">0.0</property>
+              <property name="relx">0.0</property>
+              <property name="rely">0.0</property>
+              <property name="width">130</property>
+              <property name="x">10</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label7" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="text" translatable="yes">Name:</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="relheight">0.0</property>
+              <property name="relwidth">0.0</property>
+              <property name="relx">0.0</property>
+              <property name="rely">0.0</property>
+              <property name="width">130</property>
+              <property name="x">10</property>
+              <property name="y">260</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label9" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">Type :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="relheight">0.0</property>
+              <property name="relwidth">0.0</property>
+              <property name="relx">0.0</property>
+              <property name="rely">0.0</property>
+              <property name="width">130</property>
+              <property name="x">10</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="type" named="True">
+            <property name="values">Select All Electronic Grocery Medicine </property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">160</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="category" named="True">
+            <property name="values">Select All Baby Kids Men Woman Old</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">160</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="name" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">160</property>
+              <property name="y">260</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="id" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="relheight">0.0</property>
+              <property name="relwidth">0.0</property>
+              <property name="relx">0.0</property>
+              <property name="rely">0.0</property>
+              <property name="width">150</property>
+              <property name="x">160</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="save" named="True">
+            <property name="background">#1a73e8</property>
+            <property name="disabledforeground">#ffffff</property>
+            <property name="font">{Cambria} 14 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">SAVE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">120</property>
+              <property name="x">110</property>
+              <property name="y">320</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Listbox" id="all_item_list" named="True">
+            <property name="background">#c0c0c0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">350</property>
+              <property name="width">200</property>
+              <property name="x">350</property>
+              <property name="y">115</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label11" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 14 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">ALL ITEMS</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">200</property>
+              <property name="x">350</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="View_Item_Frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">550</property>
+          <property name="width">600</property>
+          <property name="x">200</property>
+          <property name="y">50</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="label21" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 14 {bold underline}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">VIEW ITEM</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="width">200</property>
+              <property name="x">200</property>
+              <property name="y">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="vi_type1" named="True">
+            <property name="values">Select All Electronic Grocery Medicine </property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">180</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="vi_category1" named="True">
+            <property name="values">Select All Baby Kids Men Woman Old</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">350</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="vi_serch_button" named="True">
+            <property name="background">#1a73e8</property>
+            <property name="disabledforeground">#ffffff</property>
+            <property name="font">{Cambria} 14 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">SEARCH</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">50</property>
+              <property name="x">520</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="vi_search1" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">10</property>
+              <property name="y">80</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label26" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="text" translatable="yes">Days Left:</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="relheight">0.0</property>
+              <property name="relwidth">0.0</property>
+              <property name="relx">0.0</property>
+              <property name="rely">0.0</property>
+              <property name="width">130</property>
+              <property name="x">330</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Spinbox" id="vi_day1" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="width">100</property>
+              <property name="x">470</property>
+              <property name="y">145</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Scale" id="scale2" named="True">
+            <property name="orient">horizontal</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">40</property>
+              <property name="width">150</property>
+              <property name="x">160</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label28" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="text" translatable="yes">Quantity Left(%) :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="relheight">0.0</property>
+              <property name="relwidth">0.0</property>
+              <property name="relx">0.0</property>
+              <property name="rely">0.0</property>
+              <property name="width">130</property>
+              <property name="x">10</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="pygubu.builder.widgets.tkscrolledframe" id="vi_table" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="scrolltype">both</property>
+            <property name="usemousewheel">false</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">340</property>
+              <property name="width">580</property>
+              <property name="x">10</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="show_items" named="True">
+        <property name="background">#1a73e8</property>
+        <property name="disabledforeground">#ffffff</property>
+        <property name="font">{Cambria} 14 {}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="text" translatable="yes">SHOW ITEM</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">30</property>
+          <property name="width">120</property>
+          <property name="x">40</property>
+          <property name="y">190</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="shoping_List" named="True">
+        <property name="background">#1a73e8</property>
+        <property name="disabledforeground">#ffffff</property>
+        <property name="font">{Cambria} 14 {}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="text" translatable="yes">SHOPING LIST</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">30</property>
+          <property name="width">120</property>
+          <property name="x">40</property>
+          <property name="y">250</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="Shoping_List_Frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">550</property>
+          <property name="width">600</property>
+          <property name="x">200</property>
+          <property name="y">50</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="label8" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 14 {bold underline}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SHOPING LIST</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="width">200</property>
+              <property name="x">200</property>
+              <property name="y">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="pygubu.builder.widgets.tkinterscrolledtext" id="sl_text_area" named="True">
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">420</property>
+              <property name="width">250</property>
+              <property name="x">20</property>
+              <property name="y">70</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="sl_generate_list" named="True">
+            <property name="background">#1a73e8</property>
+            <property name="disabledforeground">#ffffff</property>
+            <property name="font">{Cambria} 14 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Generate List</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">120</property>
+              <property name="x">40</property>
+              <property name="y">510</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="sl_whatsapp" named="True">
+            <property name="background">#1a73e8</property>
+            <property name="disabledforeground">#ffffff</property>
+            <property name="font">{Cambria} 14 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Whatsapp</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">120</property>
+              <property name="x">210</property>
+              <property name="y">510</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="sl_print" named="True">
+            <property name="background">#1a73e8</property>
+            <property name="disabledforeground">#ffffff</property>
+            <property name="font">{Cambria} 14 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Print</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">120</property>
+              <property name="x">380</property>
+              <property name="y">510</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label3" named="True">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 16 {underline}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">center</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">25</property>
+              <property name="width">60</property>
+              <property name="x">530</property>
+              <property name="y">100</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="update" named="True">
+        <property name="background">#1a73e8</property>
+        <property name="disabledforeground">#ffffff</property>
+        <property name="font">{Cambria} 14 {}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="text" translatable="yes">UPDATE</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">30</property>
+          <property name="width">120</property>
+          <property name="x">40</property>
+          <property name="y">310</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
